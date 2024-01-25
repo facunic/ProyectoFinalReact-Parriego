@@ -127,6 +127,25 @@ body {
   z-index: 12;
 }
 
+.sidebar li a {
+  color: white; 
+}
+
+.sidebar i {
+  color: white; 
+}
+
+.sidebar .logo_details .logo_name {
+  color: white; 
+
+.sidebar input::placeholder {
+  color: var(--color-light);
+}
+
+.sidebar .bx-search {
+  color: white; 
+}
+
 .sidebar li a::after {
   content: "";
   position: absolute;
