@@ -20,15 +20,14 @@ body {
 }
 
 .sidebar {
-  min-height: 100vh;
-  width: 78px;
-  padding: 6px 14px;
-  background-color: var(--primary-color);
-  transition: all .5s ease;
+  height: 60px; /* Ajusta la altura según tus necesidades */
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 999;
+  width: 100%;
+  padding: 6px 14px;
+  background-color: black; /* Cambia el color de fondo a negro */
+  transition: all .5s ease;
 }
 
 .sidebar.open {
@@ -231,12 +230,14 @@ input:checked + .slider:before {
 
 .home-section {
   position: relative;
+  background-color: var(--bg-color);
   min-height: 100vh;
-  top: 0;
-  left: 78px;
-  width: calc(100% - 78px);
+  margin-top: 60px; /* Ajusta el margen superior según la altura de la barra de navegación */
   transition: all .5s ease;
   overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .home-section .text {
