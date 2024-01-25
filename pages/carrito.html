@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>EcoFusion - Carrito de Compras</title>
+  <link rel="stylesheet" href="../style.css">
+  <link href='../node_modules/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11"> 
+</head>
+<body>
+
+  <div class="sidebar sidebar-theme ">
+    <div class="logo_details">
+      <div class="logo_name">EcoFusion</div>
+      <i class="bx bx-menu" id="btn"></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+        <i class="bx bx-search"></i>
+        <input type="text" placeholder="Buscar...">
+      </li>
+      <li>
+        <a href="../index.html">
+          <i class='bx bxs-home'></i>
+          <span class="link_name">Inicio</span>
+        </a>
+      </li>
+      <li>
+        <a href="./productos.html">
+          <i class='bx bx-store' ></i>
+          <span class="link_name">Productos</span>
+        </a>
+      </li>
+      <li>
+        <a href="./contacto.html">
+          <i class="bx bx-chat"></i>
+          <span class="link_name">Contactanos</span>
+        </a>
+      </li>
+      <li>
+        <a href="./carrito.html">
+          <i class='bx bxs-cart'></i>
+          <span class="link_name">Carrito</span>
+        </a>
+      </li>
+      <li class="theme">
+        <div class="switch-container">
+          <label class="switch">
+            <input type="checkbox" id="switchToggle">
+            <span class="slider"></span>
+          </label>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <section class="home-section">
+    <div id="cart-section">
+      <table>
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+                <th>Oferta</th>
+                <th>Eliminar</th>
+            </tr>
+        </thead>
+        <tbody id="cartBody">
+            <tr>
+                <td>Camiseta Verde</td>
+                <td>$25.00</td>
+                <td>10% descuento</td>
+                <td><button onclick="eliminarProducto(1)">Eliminar</button></td>
+            </tr>
+            <tr>
+                <td>Pantalón Vaquero</td>
+                <td>$40.00</td>
+                <td>Sin oferta</td>
+                <td><button onclick="eliminarProducto(2)">Eliminar</button></td>
+            </tr>
+            <!-- Puedes agregar más filas para más productos -->
+        </tbody>
+      </table>
+      <button id="vaciarCarritoBtn">Vaciar Carrito</button>
+      <button id="confirmarCompraBtn">Confirmar compra</button>
+    </div>
+  </section>
+
+  <footer>
+    <section class="footer">
+      <div class="iconos">
+          <a href="https://web.facebook.com/"><i class='bx bxl-facebook-circle' ></i></a>
+          <a href="https://www.whatsapp.com/"><i class='bx bxl-whatsapp'></i></i></a>
+          <a href="https://twitter.com/"><i class='bx bxl-twitter'></i></a>
+          <a href="https://github.com/"><i class='bx bxl-github'></i></i></a>
+      </div>
+    </section>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script type="module" src="../scripts/carrito.js"></script>
+  <script type="module" src="../scripts/card.js"></script>
+  <script  src="../scripts/script.js"></script>
+</body>
+</html>

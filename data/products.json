@@ -1,0 +1,102 @@
+[
+    {
+      "id": 9,
+      "title": "Camisa de Manga Corta para Hombre",
+      "price": 24.99,
+      "description": "Camisa casual de manga corta para hombres. Material cómodo y transpirable. Ideal para ocasiones informales.",
+      "category": "ropa",
+      "image": "https://img.bestdealplus.com/ae04/kf/Hd875503a83824b84b9a804cd4dba3f79n.jpg",
+      "rating": null,
+      "sale": 0,
+      "count": 203
+    },
+    {
+      "id": 10,
+      "title": "Vestido de Verano para Mujer",
+      "price": 39.99,
+      "description": "Vestido de verano ligero y elegante para mujeres. Ideal para días soleados y ocasiones casuales.",
+      "category": "ropa",
+      "image": "https://image.made-in-china.com/202f0j00ynbVZldseBgv/Fashion-Summer-Floral-Dress-for-Women-Ladies-V-Neck-Adjustable-Waist-Short-Sleeves-Thin-Casual-Women-s-Dresses-Skirts.webp",
+      "rating": null,
+      "sale": 45,
+      "count": 470
+    },
+    {
+      "id": 11,
+      "title": "Jeans Ajustados para Hombre",
+      "price": 49.99,
+      "description": "Jeans modernos y ajustados para hombres. Diseño cómodo y versátil para cualquier ocasión.",
+      "category": "ropa",
+      "image": "https://m.media-amazon.com/images/I/71nJuTQJz3L._AC_UF894,1000_QL80_.jpg",
+      "rating": null,
+      "sale": 0,
+      "count": 319
+    },
+    {
+      "id": 12,
+      "title": "Vestido Elegante para Noche",
+      "price": 69.99,
+      "description": "Vestido elegante para ocasiones nocturnas. Diseño moderno y atractivo.",
+      "category": "ropa",
+      "image": "https://http2.mlstatic.com/D_NQ_NP_603167-MLA53456311224_012023-O.webp",
+      "rating": null,
+      "sale": 31,
+      "count": 400
+    },
+    {
+      "id": 13,
+      "title": "Chaqueta de Cuero para Hombre",
+      "price": 99.99,
+      "description": "Chaqueta de cuero clásica para hombres. Estilo atemporal y duradero.",
+      "category": "ropa",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8G1doTGV1MybQEtZ2Q8oij0LIBCXnYxH4OSHribMjI6wJvH-HILz3BUmqKqPsnd7TQww&usqp=CAU",
+      "rating": null,
+      "sale": 0,
+      "count": 250
+    },
+    {
+      "id": 14,
+      "title": "Zapatos de Tacón Alto para Mujer",
+      "price": 79.99,
+      "description": "Zapatos elegantes de tacón alto para mujeres. Ideal para eventos formales y fiestas.",
+      "category": "ropa",
+      "image": "https://http2.mlstatic.com/D_NQ_NP_912310-MLA72112107185_102023-O.webp",
+      "rating": null,
+      "sale": 38,
+      "count": 140
+    },
+    {
+      "id": 15,
+      "title": "Suéter de Punto para Hombre",
+      "price": 34.99,
+      "description": "Suéter de punto cómodo y abrigado para hombres. Ideal para los días fríos de invierno.",
+      "category": "ropa",
+      "image": "https://i5.walmartimages.com.mx/mg/gm/3pp/asr/595ad14d-d1b1-4a14-85c4-6198ba7e77a9.0df80acb342ce9db11a6592677e7ac6b.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
+      "rating": null,
+      "sale": 20,
+      "count": 120
+    },
+    {
+      "id": 16,
+      "title": "Bolsa de Mano Elegante para Mujer",
+      "price": 49.99,
+      "description": "Bolsa de mano elegante y espaciosa para mujeres. Combina con diversos estilos.",
+      "category": "ropa",
+      "image": "https://http2.mlstatic.com/D_NQ_NP_673158-MLU72670279356_112023-O.webp",
+      "rating": null,
+      "sale": 15,
+      "count": 180
+    },
+    {
+      "id": 17,
+      "title": "Gorra de Béisbol con Estilo",
+      "price": 19.99,
+      "description": "Gorra de béisbol moderna y cómoda. Perfecta para actividades al aire libre.",
+      "category": "ropa",
+      "image": "https://image.made-in-china.com/318f0j00QaBGJKMEODUc/video.webp",
+      "rating": null,
+      "sale": 25,
+      "count": 90
+    }
+  ]
+  

@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+  --primary-color: #004f83;
+  --secondary-color: #0067ac;
+  --text-color: black;
+  --bg-color: white;
+  --color-light: #e0e0e0;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: all 0.5s ease;
+}
+
+.sidebar {
+  min-height: 100vh;
+  width: 78px;
+  padding: 6px 14px;
+  background-color: var(--primary-color);
+  transition: all .5s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.sidebar.open {
+  width: 250px;
+}
+
+.sidebar .logo_details {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.sidebar .logo_details .logo_name {
+  color: var(--text-color);
+  font-size: 22px;
+  font-weight: 600;
+  opacity: 0;
+  transition: all .5s ease;
+}
+
+.sidebar .logo_details #btn {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  font-size: 23px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.sidebar.open .logo_details #btn {
+  text-align: right;
+}
+
+.sidebar i {
+  color: var(--text-color);
+  height: 60px;
+  line-height: 60px;
+  min-width: 50px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.sidebar .nav-list {
+  margin-top: 20px;
+  height: 100%;
+}
+
+.sidebar li {
+  position: relative;
+  margin: 8px 0;
+  list-style: none;
+}
+
+.sidebar input {
+  font-size: 15px;
+  color: var(--text-color);
+  font-weight: 400;
+  outline: none;
+  height: 35px;
+  width: 35px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--secondary-color);
+  transition: all .5s ease;
+}
+
+.sidebar input::placeholder {
+  color: var(--color-light);
+}
+
+.sidebar.open input {
+  width: 100%;
+  padding: 0 20px 0 50px;
+}
+
+.sidebar .bx-search {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  font-size: 22px;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+.sidebar li a {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  text-decoration: none;
+  background-color: var(--primary-color);
+  position: relative;
+  transition: all .5s ease;
+  z-index: 12;
+}
+
+.sidebar li a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: scaleX(0);
+  background-color: var(--text-color);
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+  transform-origin: left;
+  z-index: -2;
+}
+
+.sidebar li a:hover::after {
+  transform: scaleX(1);
+  color: var(--primary-color);
+}
+
+.sidebar li a .link_name {
+  color: var(--text-color);
+  font-size: 15px;
+  font-weight: 400;
+  white-space: nowrap;
+  pointer-events: auto;
+  transition: all 0.4s ease;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.sidebar li a:hover .link_name,
+.sidebar li a:hover i {
+  transition: all 0.5s ease;
+  color: var(--primary-color);
+}
+
+.sidebar.open li a .link_name {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.sidebar li i {
+  height: 35px;
+  line-height: 35px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.switch-container {
+  display: flex;
+  align-items: center;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.home-section {
+  position: relative;
+  min-height: 100vh;
+  top: 0;
+  left: 78px;
+  width: calc(100% - 78px);
+  transition: all .5s ease;
+  overflow: hidden;
+}
+
+.home-section .text {
+  display: inline-block;
+  font-size: 25px;
+  font-weight: 500;
+  margin: 18px;
+}
+
+.sidebar.open ~ .home-section {
+  left: 250px;
+  width: calc(100% - 250px);
+}
+
+.swiper {
+  overflow-y: hidden;
+  width: 100%;
+  height: 50vh;
+  background-image: url('../img/swiper/slide1.webp');
+}
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  padding: 4.5rem;
+  max-width: 95%;
+}
+
+.product-card {
+  width: 500px;
+  background-color: #fff;
+  padding: 1rem;
+  box-shadow: 0 5px 5px #e1e1e1;
+  border-radius: 1rem;
+}
+
+.product-card img {
+  max-width: 100%;
+  max-height: 300px;
+  background-image: url('../img/ropa/camiseta_casual.webp');
+}
+
+.product-card h3 {
+  font-size: 1rem;
+  margin: 0.5em 0;
+}
+
+.product-card div {
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-card button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  font-size: 1em;
+}
+
+.title-index {
+  font-size: 3rem;
+  font-weight: 800;
+  padding: 2rem 0 2rem 0;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+form {
+  max-width: 400px;
+  margin: auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+}
+
+button {
+  background-color: var(--color-default);
+  color: var(--color-white);
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--color-second);
+}
+
+.title-form {
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
+  padding: 3rem;
+  color: var(--text-color);
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+}
+
+/* Estilos para botón de eliminar */
+.eliminar-btn {
+  background-color: red;
+}
+
+.eliminar-btn:hover {
+  background-color: red;
+}
+
+/* Estilos para el pie de página */
+.footer {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-color);
+}
+
+.iconos a {
+  color: var(--text-color);
+  margin: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.iconos img {
+  width: 100%;
+}

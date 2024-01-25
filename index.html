@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>EcoFusion</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>  
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+</head>
+<body>
+
+  <div class="sidebar sidebar-theme ">
+    <div class="logo_details">
+      <div class="logo_name">EcoFusion</div>
+      <i class="bx bx-menu" id="btn"></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+        <i class="bx bx-search"></i>
+        <input type="text" placeholder="Buscar...">
+      </li>
+      <li>
+        <a href="./index.html">
+          <i class='bx bxs-home'></i>
+          <span class="link_name">Inicio</span>
+        </a>
+      </li>
+      <li>
+        <a href="./pages/productos.html">
+          <i class='bx bx-store' ></i>
+          <span class="link_name">Tienda</span>
+        </a>
+      </li>
+      <li>
+        <a href="./pages/contacto.html">
+          <i class="bx bx-chat"></i>
+          <span class="link_name">Contacto</span>
+        </a>
+      </li>
+      <li>
+        <a href="./pages/carrito.html">
+          <i class='bx bxs-cart'></i>
+          <span class="link_name">Carrito</span>
+        </a>
+      </li>
+      <li class="theme">
+        <div class="switch-container">
+          <label class="switch">
+            <input type="checkbox" id="switchToggle">
+            <span class="slider"></span>
+          </label>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <section class="home-section">
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <img src="./IMG swiper/slide 2.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./IMG swiper/Slide1.jpg" alt="">
+        </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
+    </div>
+    
+    <h2 class="title-index">Ofertas Exclusivas</h2>
+    
+    <div id="products-container" class="products-container">
+
+    </div>
+    <footer>
+      <section class="footer">
+          <div class="iconos">
+              <a href="https://web.facebook.com/?locale=es_LA&_rdc=1&_rdr"><i class='bx bxl-facebook-circle' ></i></a>
+              <a href="https://www.whatsapp.com/?lang=es_LA"><i class='bx bxl-whatsapp'></i></i></a>
+              <a href="https://twitter.com/"><i class='bx bxl-twitter'></i></a>
+              <a href="https://github.com/"><i class='bx bxl-github'></i></i></a>
+          </div>
+          
+      </section>
+  </footer>
+
+  
+
+  </section>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="./scripts/swiper.js"></script>
+<script type="module" src="./scripts/cardIndex.js"></script>
+<script  src="./scripts//script.js"></script>
+</body>
+</html>
